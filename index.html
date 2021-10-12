@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO App With Vanila JS</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <section class="container">
+        <h1 class="main-title"> TO-DO App </h1>
+
+        <!-- Add New Task  (Start) -->
+        <form class="new-task-box box">
+            <label class="heading" for="Add New Task">Add New Task </label>
+            <input type="text" id="add-new-task">
+            <input type="submit" value="Add Task" class="btn" id="add-task-btn">
+        </form>
+        <!-- Add New Task  (End) -->
+
+        <div class="tasks">
+            <!-- Incomplete Items (Start) -->
+            <div class="todo-list box">
+                <h2 class="heading">Incomplete Tasks</h2>
+
+                <ul id="items">
+                    <li class="item">
+                        <input type="checkbox"><label for="Task Name">Task Name</label>
+                    </li>
+                    <li class="item">
+                        <input type="checkbox"><label for="Task Name">Task Name</label>
+                    </li>
+                    <li class="item">
+                        <input type="checkbox"><label for="Task Name">Task Name</label>
+                    </li>
+                </ul>
+            </div>
+            <!-- Incomplete Items (End) -->
+
+
+            <!-- Complete Items (Start) -->
+            <div class="complete-list box">
+                <h2 class="heading">Completed Tasks</h2>
+
+                <ul class="complete-items">
+                    <li class="item">
+                        Task Name <button class="delete-btn btn">Delete</button>
+                    </li>
+                </ul>
+            </div>
+            <!-- Complete Items (End) -->
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
